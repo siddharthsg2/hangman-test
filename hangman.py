@@ -93,7 +93,7 @@ def hangman(secret_word):
         letters_guessed.append(letter)
         print("")
 
-
+#comment
 # Load the list of words into the variable wordlist
 # So that it can be accessed from anywhere in the program
 secret_word = choose_word()
