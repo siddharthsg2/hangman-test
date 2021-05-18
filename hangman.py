@@ -15,6 +15,11 @@ def is_word_guessed(secret_word, letters_guessed):
       return True (if user guess the world correctly )
       return False (wrong selection)
     '''
+    for i in letters_guessed:
+
+        if i in secret_word:
+            return True
+            continue
     return False
 
 # if you want to test this function please call function -> get_guessed_word("kindness", [k, n, d])
@@ -50,7 +55,10 @@ def get_available_letters(letters_guessed):
       letters_guessed = ['e', 'a'] then    
       return sting is -> `bcdfghijklmnopqrstuvwxyz`
     '''
+
     letters_left = string.ascii_lowercase
+    for i in letters_guessed:
+        letters_left=letters_left.replace(i,"")
     return letters_left
 
 
