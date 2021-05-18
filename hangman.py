@@ -19,7 +19,6 @@ def is_word_guessed(secret_word, letters_guessed):
 
         if i in secret_word:
             return True
-            continue
     return False
 
 # if you want to test this function please call function -> get_guessed_word("kindness", [k, n, d])
